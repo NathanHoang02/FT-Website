@@ -150,9 +150,101 @@
                     </p>
                 </p>
 
-                <button class="contact-button" onclick="window.location.href='contact.html'">Book an Appointment</button>
-            </div>
+                <button class="contact-button" id="openBooking">
+                    Book an Appointment
+                </button>
 
+                <div id="bookingModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2>Book an Appointment</h2>
+                        <p>Fill out the form below and we'll get you scheduled.</p>
+
+                        <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="John Doe"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="john@example.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="(555) 555-5555"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="service-1">Service 1</option>
+                                <option value="service-2">Service 2</option>
+                                <option value="service-3">Service 3</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <input
+                                    type="time"
+                                    id="time"
+                                    name="time"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                placeholder="Anything else we should know?"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            Request Appointment
+                        </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </main>
 
 
@@ -352,9 +444,9 @@
 				<div class="copyright">
 							&copy; 2026 Fashion Tailoring & Alterations. All rights reserved.
 				</div>
-
-
     </div>
 
 </body>
+<script src = "../scripts/appointment.js"></script>
+</script>
 </html>
