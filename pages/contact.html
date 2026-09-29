@@ -158,7 +158,7 @@
                     <div class="modal-content">
                         <span class="close-modal">&times;</span>
                         <h2>Book an Appointment</h2>
-                        <p>Fill out the form below and we'll get you scheduled.</p>
+                        <p>Fill out the form below</p>
 
                         <form id="bookingForm">
                         <div class="form-group">
@@ -167,7 +167,7 @@
                                 type="text"
                                 id="name"
                                 name="name"
-                                placeholder="John Doe"
+                                placeholder="First & Last"
                                 required
                             >
                         </div>
@@ -178,7 +178,7 @@
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="john@example.com"
+                                placeholder="@email.com"
                                 required
                             >
                         </div>
@@ -189,7 +189,7 @@
                                 type="tel"
                                 id="phone"
                                 name="phone"
-                                placeholder="(555) 555-5555"
+                                placeholder="(000) 000-0000"
                                 required
                             >
                         </div>
@@ -202,6 +202,15 @@
                                 <option value="service-2">Service 2</option>
                                 <option value="service-3">Service 3</option>
                                 <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Location</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Location</option>
+                                <option value="service-1">16645 Highland Rd Ste E, Baton Rouge, LA 70810</option>
+                                <option value="service-2">1148 O'Neal Ln, Baton Rouge, LA 70816</option>
                             </select>
                         </div>
 
@@ -244,6 +253,8 @@
                         </form>
                     </div>
                 </div>
+
+                
             </div>
         </main>
 
